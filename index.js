@@ -5,10 +5,8 @@ function message(){
     return(
         <div>
             <h1>Hello</h1>
-
         </div>
     )
 }
-
 
 ReactDom.render(<message/>, document.getElementById('root'))
