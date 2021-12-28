@@ -2,12 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 function Message(){
-    
-    return(
-        <div>
-            <h1>Hello</h1>
-        </div>
-    )
+
+    return <h1>Hello</h1>
 }
 
-ReactDOM.render(<message/>, document.getElementById('root'))
+ReactDOM.render(<Message/>, document.getElementById('root'))
