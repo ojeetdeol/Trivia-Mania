@@ -12,8 +12,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : 
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ojeet Deol",
   "license": "ISC"
