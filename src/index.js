@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-function message(){
+function Message(){
+    
     return(
         <div>
             <h1>Hello</h1>
