@@ -1,8 +1,7 @@
 #root{
-    height:200px;
-    width:200px;
+    height:fit-content;
+    width:fit-content;
     background:linear-gradient(rgba(250,0,0,0.5),transparent);
     background-color:orange /*this your primary color*/
-    
     
 }
