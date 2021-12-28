@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom'
 
 function Message(){
     return(
-        <div>
-            <input type = "text" id ="num_questions" size = "30" placeholder="Enter Number Of Questions Desired"/>
-    
-    
+        <div id = "top_logo">
+            <h1 id = "top_logo_text">Trivia Mania</h1>
+            <div id ="num_questions">
+                <input type = "text"  size = "30" placeholder="Enter Number Of Questions Desired"/>
+            </div>
         </div>
+        
     )
 }
 

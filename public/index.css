@@ -1,7 +1,11 @@
-#root{
-    height:fit-content;
-    width:fit-content;
-    background:linear-gradient(rgba(250,0,0,0.5),transparent);
-    background-color:orange /*this your primary color*/
+body{
+min-height : 100%;
+  background:linear-gradient(rgba(31, 189, 0, 0.5),transparent);
+  background-color:white /*this your primary color*/
+}
+
+#num_questions{
     
+    
+    text-align: center;
 }
