@@ -1,5 +1,5 @@
 import React from 'react'
-import reactDom from 'react-dom'
+import ReactDOM from 'react-dom'
 
 function message(){
     return(
@@ -9,4 +9,4 @@ function message(){
     )
 }
 
-ReactDom.render(<message/>, document.getElementById('root'))
+ReactDOM.render(<message/>, document.getElementById('root'))
