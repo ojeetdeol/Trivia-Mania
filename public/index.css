@@ -1,9 +1,13 @@
 body{
 min-height : 100%;
   background:linear-gradient(rgba(31, 189, 0, 0.5),transparent);
-  background-color:white /*this your primary color*/
+  background-color:white 
+  
 }
 
+
+
+/* text entry box for number of questions to ask */
 #num_questions{
     
     
