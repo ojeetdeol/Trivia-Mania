@@ -8,6 +8,7 @@ function Message(){
             <div id ="num_questions">
                 <input type = "text"  size = "30" placeholder="Enter Number Of Questions Desired"/>
             </div>
+            <button id = "submit_button">Enter</button>
         </div>
         
     )
