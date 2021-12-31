@@ -5,9 +5,8 @@ function Message(){
     return(
         <div id = "top_logo">
             <h1 id = "top_logo_text">Trivia Mania</h1>
-            <div id ="num_questions">
-                <input type = "text"  size = "30" placeholder="Enter Number Of Questions Desired"/>
-            </div>
+            <input type = "submit" id= "submit" type = "text"  
+            size = "30" placeholder="Enter Number Of Questions Desired"/>
             <button id = "submit_button">Enter</button>
         </div>
         
