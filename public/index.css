@@ -10,8 +10,9 @@ body{
 
 /* text entry box for number of questions to ask */
 #num_questions{
- 
-    text-align: center;
+  margin: auto;
+  display: block;
+  text-align: center;
 }
 
 #top_logo_text{
@@ -21,9 +22,7 @@ body{
 }
 
 #submit_button{
-  margin: auto;
-  display: block;
-  float:right;
+  margin-left:10px;
 }
 
 #submit{
