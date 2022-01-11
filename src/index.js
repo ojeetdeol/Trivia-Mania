@@ -1,6 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+const url = "https://opentdb.com/api.php?amount="
+
+function fetch_questions(number_of_ques){
+    fetch()
+
+}
+
+
 function Message(){
     return(
         <div>
