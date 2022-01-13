@@ -28,7 +28,7 @@ class Trivia extends React.Component{
             <div>
                 <h1 id = "question_obj">{this.state.question}</h1>
                 <select >
-                    {this.create_options}
+                    {this.create_options()}
                 </select>
             </div>
         )

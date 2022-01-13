@@ -1,6 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Trivia from './Trivia'
 
+
+//OPENDB API URL FOR FETCHING THE QUESTIONS
 const url = "https://opentdb.com/api.php?amount="
 
 function fetch_questions(){
@@ -13,9 +16,26 @@ function fetch_questions(){
             alert('Please enter a number between 1 and 50!')
         }
         else{
+
             fetch(url+number_of_ques)
             .then(res=>res.json())
-            .then(data => console.log(data))
+            .then(data => {
+                var results_arr = data.results
+                var div_questions = document.createElement("div")
+                for(let i = 0; i < results_arr.length; i++){
+                    let temp_arr = results_arr[i].incorrect_answers
+                    temp_arr.push(results_arr[i].correct_answer)
+
+                    let result = <Trivia 
+                        question = {results_arr[i].question}
+                        answers = {results_arr[i].temp_arr}
+                        correct_answer = {results_arr[i].correct_answer}
+                        
+                    />
+                }
+                
+               //console.log(data)
+            })
         }
         
     }
