@@ -8,6 +8,8 @@ function fetch_questions(){
     if(!isNaN(number_of_ques)){
         var temp_num = parseInt(number_of_ques)
         if(temp_num <1 || temp_num > 50){
+        
+        
             alert('Please enter a number between 1 and 50!')
         }
         else{
