@@ -7,13 +7,19 @@ function fetch_questions(){
     var number_of_ques = document.getElementById('input').value
     if(!isNaN(number_of_ques)){
         var temp_num = parseInt(number_of_ques)
-        fetch(url+number_of_ques)
-        .then(res=>res.json())
-        .then(data => console.log(data))
+        if(temp_num <1 || temp_num > 50){
+            alert('Please enter a number between 1 and 50!')
+        }
+        else{
+            fetch(url+number_of_ques)
+            .then(res=>res.json())
+            .then(data => console.log(data))
+        }
+        
     }
     else{
-        console.log(1)
-        alert('You Did Not Enter A Number!')
+        
+        alert('You Did Not Enter A Number! Please enter a number between 1 and 50!')
     }
     
     
