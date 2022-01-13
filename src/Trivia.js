@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-class Triva extends React.Component{
+class Trivia extends React.Component{
 
     constructor(props){
         this.state= {
@@ -10,20 +10,25 @@ class Triva extends React.Component{
             answers : this.props.answer
         }
     }
-    create_dropdown_options(){
-        for(let i = 0; i < this.answers.length; i++){
-            let element = document.createElement("option")
-            element.value = this.state.answers[i]
-            document.
+    
+    create_options(){
+        let opts = []
+        for(let i = 0; i <answers.length; i++){
+            let opt = document.createElement("option")
+            opt.value = answers[i]
+            opt.text = answers[i]
+            opts.push(opt)
         }
+        return opts
     }
+
 
     render(){
         return (
             <div>
                 <h1 id = "question_obj">{this.state.question}</h1>
                 <select >
-                    
+                    {this.create_options}
                 </select>
             </div>
         )
